@@ -1,0 +1,2 @@
+class CarSeatItem < ApplicationRecord
+end

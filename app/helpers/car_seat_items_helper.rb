@@ -1,0 +1,2 @@
+module CarSeatItemsHelper
+end

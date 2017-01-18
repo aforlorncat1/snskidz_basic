@@ -1,0 +1,1 @@
+json.array! @car_seat_items, partial: 'car_seat_items/car_seat_item', as: :car_seat_item
