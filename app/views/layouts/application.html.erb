@@ -4,11 +4,54 @@
     <title>Snskidz</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Roboto" rel="stylesheet">
+    <link href="assets/logo-nav.scss" rel="stylesheet/scss">
+
+    <script src="https://use.fontawesome.com/bfa5f9bf0c.js"></script>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+   <!-- Navigation -->
+    <nav class="navbar navbar-inverse" style="background-color: #F8F8F8" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <%= link_to image_tag( "snskidz-logo_s.jpg",class: "image-responsive"), root_path %>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#">ARTICLES</a>
+                    </li>
+                    <li>
+                        <%= link_to "SEATS",car_seat_items_path %>
+                    </li>
+                    <li>
+                        <i class="fa fa-shopping-cart fa-3x fa-fw" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-search fa-3x fa-fw" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
     <%= yield %>
   </body>
 </html>

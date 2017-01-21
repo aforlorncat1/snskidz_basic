@@ -1,31 +1,164 @@
-<p id="notice"><%= notice %></p>
+  <!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Product View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/car_seat_items.scss">
+</head>
 
-<h1>Car Seat Items</h1>
+<body>
+  <body>
+  <div class="lightbox-blanket">
+    <div class="pop-up-container">
+      <div class="pop-up-container-vertical">
+        <div class="pop-up-wrapper">
+          <div class="go-back" onclick="GoBack();"><i class="fa fa-arrow-left"></i>
+          </div>
+          <div class="product-details">
+            <div class="product-left">
+              <div class="product-info">
+                <div class="product-manufacturer">MONSTAR
+                </div>
+                <div class="product-title">
+                  BLACK CAR SEAT /W BOOSTER
+                </div>
+                <div class="product-price" price-data="320.03">
+                  $999<span class="product-price-cents">99</span>
+                </div>
+              </div>
+              <div class="product-image">
+                <%= image_tag "Monstar_Black_Front.jpg"%>
+              </div>
+            </div>
+            <div class="product-right">
+              <div class="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non elit metus. Nunc et volutpat ipsum, non mattis tortor. Suspendisse condimentum fringilla dui, vel fringilla est luctus et. Pellentesque tempus, sapien vehicula facilisis pretium, felis leo dictum eros, eget pretium odio quam at lacus. Sed quis lorem neque. Aliquam ut laoreet orci, imperdiet vehicula tellus. Proin euismod mollis purus et condimentum.
+              </div>
+              <div class="product-available">
+                In stock. <span class="product-extended"><a href="#">Buy Extended Warranty</a></span>
+              </div>
+              <div class="product-rating">
+                <i class="fa fa-star rating" star-data="1"></i>
+                <i class="fa fa-star rating" star-data="2"></i>
+                <i class="fa fa-star rating" star-data="3"></i>
+                <i class="fa fa-star" star-data="4"></i>
+                <i class="fa fa-star" star-data="5"></i>
+                <div class="product-rating-details">(3.1 - 1203 reviews)</div>
+              </div>
+              <div class="product-quantity">
+                <label for="product-quantity-input" class="product-quantity-label">Quantity</label>
+                <div class="product-quantity-subtract">
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <div>
+                  <input type="text" id="product-quantity-input" placeholder="0" value="0" />
+                </div>
+                <div class="product-quantity-add">
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-bottom">
+              <div class="product-checkout">
+                Total Price
+                <div class="product-checkout-total">
+                  <i class="fa fa-usd"></i>
+                  <div class="product-checkout-total-amount">
+                    0.00
+                  </div>
+                </div>
+              </div>
+              <div class="product-checkout-actions">
+                <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="random-background">
+    <div class="itemlist">
+      <div class="itemlist-item-wrapper" onclick="OpenProduct();">
+        <div class="product-details">
+          <div class="">
+            <div class="product-info">
+              
+              <div class="product-title">
+                MONSTAR BLACK
+              </div>
+              <div class="product-price" price-data="320.03">
+                $999<span class="product-price-cents">99</span>
+              </div>
+            </div>
+            <div class="product-image">
+                <%= image_tag "Monstar_Black_Front.jpg"%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itemlist-item-wrapper" onclick="OpenProduct();">
+        <div class="product-details">
+          <div class="">
+            <div class="product-info">
+              
+              <div class="product-title">
+                MONSTAR GREEN
+              </div>
+              <div class="product-price" price-data="320.03">
+                $999<span class="product-price-cents">99</span>
+              </div>
+            </div>
+            <div class="product-image">
+                <%= image_tag "Monstar_Green_Booster1_Front.jpg"%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itemlist-item-wrapper" onclick="OpenProduct();">
+        <div class="product-details">
+          <div class="">
+            <div class="product-info">
+              
+              <div class="product-title">
+                MONSTAR ORANGE
+              </div>
+              <div class="product-price" price-data="320.03">
+                $999<span class="product-price-cents">99</span>
+              </div>
+            </div>
+            <div class="product-image">
+                <%= image_tag "Monstar_Orange_Front.jpg"%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itemlist-item-wrapper" onclick="OpenProduct();">
+        <div class="product-details">
+          <div class="">
+            <div class="product-info">
+              <div class="product-title">
+                MONSTAR YELLOW
+              </div>
+              <div class="product-price" price-data="320.03">
+                $999<span class="product-price-cents">99</span>
+              </div>
+            </div>
+            <div class="product-image">
+               <%= image_tag "Monstar_Yellow_Front.jpg"%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <script src="javascripts/index.js"></script>
 
-  <tbody>
-    <% @car_seat_items.each do |car_seat_item| %>
-      <tr>
-        <td><%= car_seat_item.name %></td>
-        <td><%= car_seat_item.price %></td>
-        <td><%= car_seat_item.description %></td>
-        <td><%= link_to 'Show', car_seat_item %></td>
-        <td><%= link_to 'Edit', edit_car_seat_item_path(car_seat_item) %></td>
-        <td><%= link_to 'Destroy', car_seat_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Car Seat Item', new_car_seat_item_path %>
+</body>
+</html>
