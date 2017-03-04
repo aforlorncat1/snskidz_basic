@@ -11,11 +11,94 @@
     background: url(http://placehold.it/800x600
 ) no-repeat center center;
     background-size: cover;
+    position:flex;
 }
 
 .intro-message {
-    position: relative;
+    // position: flex;
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 7%;
     color:black;
+    height:100%
 }
+
+#btn-xlarge {
+    padding: 18px 28px;
+    font-size: 40px;
+    font-family: Baloo Bhaina;
+    line-height: normal;
+    border: 12px solid #154575;
+    background: #2F72DD;
+	color: #ffffff;
+    align-self: flex-end;
+    display: inline-block;
+    // position: absolute;
+    // left:50%;
+    // bottom: 0;
+    // margin-left: -50px;
+    -webkit-border-radius: 24px;
+       -moz-border-radius: 24px;
+            border-radius: 24px;
+    }
+
+#btn-inner {
+    background: #fbb040;
+    color: #ffffff;
+    font-family: Baloo Bhaina;
+    font-size: 35px;
+
+     -webkit-border-radius: 24px;
+       -moz-border-radius: 24px;
+            border-radius: 24px;
+}
+
+#search {
+  background:hsla(217, 72%, 53%, 1);
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+  text-align: center;
+
+  
+  h1{
+      font-size: 50px;
+      color: #fbb040;
+      font-weight: bold;
+      font-family: Baloo Bhaina;
+
+  }
+
+  h3{
+      color:#ffffff;
+      font-size: 20px;
+      font-family: Baloo Bhaina;
+  }
+
+  #searchinput{
+        -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+  }
+}
+
+.input-group-lg{
+      margin: 0 auto;
+      text-align: center;
+
+}
+
+#btn-letsgo {
+    background: #fbb040;
+    color: #ffffff;
+    font-family: Baloo Bhaina;
+    font-size: 35px;
+    margin: 30px;
+    
+      -webkit-border-radius: 24px;
+       -moz-border-radius: 24px;
+            border-radius: 24px;
+}
+

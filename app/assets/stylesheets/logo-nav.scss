@@ -29,14 +29,20 @@
 //   padding: 10px;
 //   width: auto;
 // }
+.navbar-inverse  {
+    border-color: transparent !important;
+}
 
 .navbar-inverse .navbar-nav > li > a {
     font-family: 'Roboto';
     color: black;
-    font-size: 1.8em !important;
+    font-size: 1.5em !important;
+    display: inline-block;
 }
 
-
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: black !important;
+}
 
 @media(min-width:768px) {
     // body {

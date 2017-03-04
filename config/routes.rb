@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'pages/articles'
 
+get 'pages/seat_type'
   
 
 end
