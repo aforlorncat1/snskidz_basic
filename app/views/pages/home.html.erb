@@ -33,22 +33,26 @@
       </div>
 
       <li><h3>Birthday</h3></li>
-      <div class="input-group input-group-lg">
-        <div class="input-group-addon">
-            <i class="fa fa-calendar"></i>
-        </div>
-             <input id="searchinput" name="date" type="text"  placeholder="DD/MM/YYYY" class="form-control">
+      <div id = "datepicker" class="input-group input-group-lg">
+
+        <input id="dob" name="date" type="text"  placeholder="DD/MM/YYYY" class="form-control" data-provide="datepicker" data-date-end-date="0d" data-date-autoclose = "true">
+
       </div>
+
+        <li><label for="age">Age
+                <input class="form-control" type="text" id="myage" style="width:200px;" />
+                        </label>
+        </li>
 
       <li><h3>Weight</h3></li>
       <div class="input-group input-group-lg">
-        <input id="searchinput" name="childweight" type="text" placeholder="Weight" class="form-control">
+        <input id="searchinput" name="childweight" type="text" placeholder="Weight (in kg)" class="form-control">
       </div>
     
       <%= link_to pages_seat_type_path do %>
-     <li><button id="btn-letsgo" class="btn btn-lg type="submit"">
+     <button id="btn-letsgo" class="btn btn-lg type="submit"">
                 LET'S GO
-            </button></li>
+            </button>
             <%end%>
     </ul>
     </form>
